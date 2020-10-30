@@ -52,7 +52,6 @@ const avestaDict = {
     51: "√-",
 }
 
-
 const tests = {
     "1":{"englishQ":"body","avestaAns":[["t","a","n","u"]]},
     "2":{"englishQ":"then","avestaAns":[["A","a","T"]]},
@@ -416,6 +415,10 @@ function restartStraightTest() {
     document.getElementById("checkButton").text = "Check" // need this to run when in development i type in a new test no immediately after clicking on showAnswer
     document.getElementById('showAnswerButton').classList.remove("disabled") // need this to run when in development i type in a new test no immediately after clicking on showAnswer
 
+    if (oldRandomNos === lengthOfTests) { // this resets the number back to starting in case user reaches end of test.
+        if (squareRootWordMode) oldRandomNos = 85; // If SqRootWord Mode is on then reset to: put the test number here where sq root words are starting minus 1
+        else oldRandomNos = 0; // if SqRootWord Mode is off then reset to 0
+    }
     oldRandomNos += 1
     randomNo = oldRandomNos
     console.log("Random/Test No: ", randomNo)
@@ -650,7 +653,7 @@ let squareRootWordMode = false;
 
 let firstSection = document.getElementById('firstSection');
 
-const lengthOfTests = 104
+const lengthOfTests = 131;
 // let oldRandomNos = []
 let oldRandomNosOfSqRootWords = []
 let amountOfSqRootWordsInTestArray = 0 

@@ -4,3 +4,5 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/XtremePwnership/LearnAvesta.git
 git push -u origin main
+
+The easiest way to merge your new code into an existing Github repo is to firstly clone that repo. Then delete everything from that folder EXCEPT .git & deploy.bat. Then copy all the stuff from the new folder where your new code lies, EXCEPT those 2 things. Then simply running deploy.bat (which is actually the same old deploy.bat in the existing Github repo) will be a great success.
