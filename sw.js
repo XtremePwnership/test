@@ -1,4 +1,4 @@
-// just a placeholder comment to ensure cache gets refresh. vvv8daaa
+// just a placeholder comment to ensure cache gets refresh. vvv8dasds
 
 self.addEventListener("install", e => {
 e.waitUntil(
