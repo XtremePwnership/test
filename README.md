@@ -1,7 +1,3 @@
-echo "# test" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/XtremePwnership/test.git
-git push -u origin main
+A simple home-made PWA to help students learning the Avestan language practice.
+
+Currently contains 2 pages: i) A random Avestan alphabet generator ii) Word forming game.

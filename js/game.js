@@ -51,108 +51,8 @@ const avestaDict = {
     50: "!",
     51: "√-",
 }
-const oldTests = {
-    1: [[23,1,30,5], "body"], //1: {englishQ: "body", avestaAns: [['t','a','n','u']]}
-    2: [[2,1,24], "then"], //
-    3: [[1,44,1], "righteousness"],  
-    4: [[1,36,5,20,25,32], "Ahurem"],
-    5: [[18,2,23,1,20,25], "Dātré"],
-    6: [[32,26], "my"],
-    7: [[1,31,11,5,43,23,1], "toe/finger"],
-    8: [[28,48,1,31,24], "How many?"],
-    9: [[20,1,17,37,40,1], "timely"],
-    10: [[49,1,36,3,43,23,1], "best"],
-    11: [[5,44,1], "dawn"],
-    12: [[1,45,40,1], "blessed"], //1,41,40,1
-    13: [[5,35,2,46,1,30,1], "driving away"],
-    14: [[18,20,1,48,2,42,35,1], "having healthy horses"],
-    15: [[18,20,1,48,1], "healthy"],
-    16: [[1,42,35,1], "horse"],
-    17: [[30,3,18,1,17,2,32,1], "we gave"],
-    18: [[28,1,20,2,30,3], "field"],
-    19: [[49,1,30,39,32], "tree"],
-    20: [[30,4,20,15], "I poured down."],
-    21: [[36,5], "good"],
-    22: [[5,8,23,1], "word"],
-    23: [[36,6,8,23,1], "good word"], //36,4,8,23,1
-    24: [[3,19,1], "here"],
-    25: [[30,1,16,19,1], "not here/neither"],
-    26: [[36,1,19,1], "together"],
-    27: [[36,1,19,1,13,8,23,1], "Hadokht (Nask)"],
-    28: [[1,20], "to go towards"],
-    29: [[32,1,46,18,2,3], "for Mazda"],
-    30: [[1,36,5,20,2,3], "for Ahura"],
-    31: [[2], "comes"],
-    32: [[2,3,23,16], "comes towards"],
-    33: [[5,3,23,3], "thus"],
-    34: [[5,3,23,40,1,13,29,1,30,1], "speaking thus"],
-    35: [[35,1,3,23,3], "against"],
-    36: [[35,1,3,23,40,2,20,1], "opposition"],
-    37: [[42,35,3,23,40,5,20,1], "Spityura"],
-    38: [[1,44,1,13,30,40,2,3], "For the holy lady."],
-    39: [[23,1,30,48,1,24], "from the body"],
-    40: [[36,48,2,21,20,3,23,1], "greatly beloved"],
-    41: [[5,20,5], "wide"],
-    42: [[2,35,1], "water"],
-    43: [[5,20,48,2,35,1], "widely flowing water"], //5,20,48,2,35,1
-    44: [[7,1,42,5], "very small"],
-    45: [[7,1,42,48,3], "small"],
-    46: [[46,20,48,2,30,1], "time"],
-    47: [[11,1,13], "cow/bull"],
-    48: [[11,1,48,1], "with the cow/bull"], //1,48,1
-    49: [[11,1,48,39,32], "of the cow's/bull's"], //
-    50: [[18,20,3,23,1], "affliction"], //
-    51: [[46,4,24], "indeed/surely"], //
-    52: [[1,30,6,8,23,1], "speaking in accordance"], //
-    53: [[5,35,1,16,23,1], "approached"],
-    54: [[30,2,3,20,40,1,42,28,1], "and the women"],
-    55: [[1,33,36,48,15], "for the world"],
-    56: [[46,20,5], "to be old"],
-    57: [[11,2,17,2,3], "for Gathas"],
-    58: [[21,20,1,13,8,23,1], "spoke forth"],
-    59: [[3,20,3,8,23,1], "poured"],
-    60: [[22,1,8,23,1], "divided/approportioned"],
-    61: [[3,20,3,42,23,1], "dead"],
-    62: [[20,2,42,23,3], "truth"], //20,2,42,23,1
-    63: [[32,40,1,46,18,1], "offering"],
-    64: [[18,1,46,18,1], "gift"],
-    65: [[30,3,18,1,17,2,32,1], "we gave"],
-    66: [[18,1,51], "to give/to know/to create"],
-    67: [[18,2,17,51], "to create"],
-    68: [[11,20,1,31,23,1], "angry"], //51 in end
-    69: [[41,1,46,51], "to venerate/to worship"],
-    70: [[41,1,43,23,1], "venerated/attuned"],
-    71: [[35,1,20,42,51], "to ask"],
-    72: [[35,1,20,43,23,1], "asked/question"],
-    73: [[1,36,51], "to be/is"],
-    74: [[1,42,23,3], "he is/she is/it is"],
-    75: [[49,1,36,51], "to wear"],
-    76: [[49,1,42,23,15], "he wears/she wears"],
-    77: [[41,1,42,30,1], "veneration"],
-    78: [[20,1,44,30,5], "arrangement"],
-    79: [[49,1,42,32,1], "carrying"],
-    80: [[32,1,20,51], "to die"],
-    81: [[32,1,45,40,1], "man"],
-    82: [[21,20,1,48,1,44,3], "Guardian Spirit/Fravashi"],
-    83: [[23,1,8,32,1,30], "seed"],
-    84: [[23,1,35,51], "to heat"],
-    85: [[23,1,21,30,5], "fever/heat"],
-    86: [[32,1,42,23,3], "exhilaration"],
-    87: [[28,3,24,51], "to think"],
-    88: [[28,3,42,23,3], "knowledge"],
-    89: [[49,1,31,23,1], "vomited"],
-    90: [[32,1,20,43,23,1], "rubbed"],
-    91: [[3,44,51], "to wish/to desire/to throw"],
-    92: [[5,44,51], "to burn/to shine"],
-    93: [[7,27,51], "to do"],
-    94: [[8,44,3,51], "to rule/to shine"],
-    95: [[11,1,32,51], "to go"],
-    96: [[11,5,44,51], "to hear"],
-    97: [[18,27,51], "to tear"],
-    98: [[18,20,5,29,51], "to lie/to hurt/to decieve"],
-    99: [[35,2,51], "to protect"],
-    // 100: [[35,2,51], "country"],
-}
+
+
 const tests = {
     "1":{"englishQ":"body","avestaAns":[["t","a","n","u"]]},
     "2":{"englishQ":"then","avestaAns":[["A","a","T"]]},
@@ -219,158 +119,72 @@ const tests = {
     "63":{"englishQ":"offering","avestaAns":[["m","y","a","z","d","a"]]},
     "64":{"englishQ":"gift","avestaAns":[["d","a","z","d","a"]]},
     "65":{"englishQ":"we gave","avestaAns":[["n","i","d","a","q","A","m","a"]]},
-    "66":{"englishQ":"to give / to know / to create","avestaAns":[["d","a","√-"]]},
-    "67":{"englishQ":"to create","avestaAns":[["d","A","q","√-"]]},
-    "68":{"englishQ":"angry","avestaAns":[["g","r","a","N","t","a"]]},
-    "69":{"englishQ":"to venerate / to worship","avestaAns":[["Y","a","z","√-"]]},
-    "70":{"englishQ":"venerated / attuned","avestaAns":[["Y","a","S","t","a"]]},
-    "71":{"englishQ":"to ask","avestaAns":[["p","a","r","s","√-"]]},
-    "72":{"englishQ":"asked / question","avestaAns":[["p","a","r","S","t","a"]]},
-    "73":{"englishQ":"to be / is","avestaAns":[["a","h","√-"]]},
-    "74":{"englishQ":"he is / she is / it is","avestaAns":[["a","s","t","i"]]},
-    "75":{"englishQ":"to wear","avestaAns":[["W","a","h","√-"]]},
-    "76":{"englishQ":"he wears / she wears","avestaAns":[["W","a","s","t","e"]]},
-    "77":{"englishQ":"veneration","avestaAns":[["Y","a","s","n","a"]]},
-    "78":{"englishQ":"arrangement","avestaAns":[["r","a","C","n","u"]]},
-    "79":{"englishQ":"carrying","avestaAns":[["W","a","s","m","a"]]},
-    "80":{"englishQ":"to die","avestaAns":[["m","a","r","√-"]]},
-    "81":{"englishQ":"man","avestaAns":[["m","a","‚","y","a"]]},
-    "82":{"englishQ":"Guardian Spirit / Fravashi","avestaAns":[["f","r","a","w","a","C","i"]]},
-    "83":{"englishQ":"seed","avestaAns":[["t","a","x","m","a","n"]]},
-    "84":{"englishQ":"to heat","avestaAns":[["t","a","p","√-"]]},
-    "85":{"englishQ":"fever / heat","avestaAns":[["t","a","f","n","u"]]},
-    "86":{"englishQ":"exhilaration","avestaAns":[["m","a","s","t","i"]]},
-    "87":{"englishQ":"to think","avestaAns":[["c","i","T","√-"]]},
-    "88":{"englishQ":"knowledge","avestaAns":[["c","i","s","t","i"]]},
-    "89":{"englishQ":"vomited","avestaAns":[["W","a","N","t","a"]]},
-    "90":{"englishQ":"rubbed","avestaAns":[["m","a","r","S","t","a"]]},
-    "91":{"englishQ":"to wish / to desire / to throw","avestaAns":[["i","C","√-"]]},
-    "92":{"englishQ":"to burn / to shine","avestaAns":[["u","C","√-"]]},
-    "93":{"englishQ":"to do","avestaAns":[["k","vrv","√-"]]},
-    "94":{"englishQ":"to rule / to shine","avestaAns":[["x","C","i","√-"]]},
-    "95":{"englishQ":"to go","avestaAns":[["g","a","m","√-"]]},
-    "96":{"englishQ":"to hear","avestaAns":[["g","u","C","√-"]]},
-    "97":{"englishQ":"to tear","avestaAns":[["d","vrv","√-"]]},
-    "98":{"englishQ":"to lie / to hurt / to decieve","avestaAns":[["d","r","u","j","√-"]]},
-    "99":{"englishQ":"to protect","avestaAns":[["p","A","√-"]]},
-    "100":{"englishQ":"country","avestaAns":[["d","a","F","y","u"],["d","a","i","?","h","u"]]},
-    "101":{"englishQ":"mountain","avestaAns":[["g","a","i","r","i","S"],["b","a","r","v","z","a","M","h"]]},
-    "102":{"englishQ":"pain","avestaAns":[["d","vrv"],["d","r","i","t","a"]]},
-    "103":{"englishQ":"teaching","avestaAns":[["T","k","a","E","C","a"],["s","a","s","t","i"]]},
-    "104":{"englishQ":"to go","avestaAns":[["g","a","m","√-"],["i","√-"],["a","r","√-"]]}
-}
-
-function restartStraightTest() {
-    setTimeout(function() {
-        avestaLetters = document.querySelectorAll(".AvestaLetters"); // nodeList of all the avestaLetters in the origin. since it is not declared, it becomes a global variable. Capturing this after sometime as the app.js insertavestaLetters() function is generating these html img elements firstly.
-	    avestaLetters.forEach((avestaLetter) => {
-		const event = () => {
-            let buttonStatus = document.getElementById("checkButton").text
-			if (isAnimating || buttonStatus == "Next" || buttonStatus == "Correct!")  return; // if we already have an animation playing, don't let the user start a new one. Also if already correct answer has been given, don't animate naymore.
-			avestaLetter.closest(".thirdSectionElements") ? move(avestaLetter) : putback(avestaLetter); // decide if we should use the move() or putback() functions based on the avestaLetter's current location
-		};
-	
-		avestaLetter.addEventListener("mouseup", event);
-        avestaLetter.addEventListener("touchend", event);
-    })
-
-    jumperInput = document.querySelector("#jumperInput") // giving the deelopment stage input test number field enter functionality
-    jumperInput.addEventListener("keyup", function(event) {
-        // Number 13 is the "Enter" key on the keyboard
-        if (event.keyCode === 13) {
-          // Cancel the default action, if needed
-          event.preventDefault();
-          // Trigger the button element with a click
-          document.getElementById("jumperButton").click();
-        }
-      });
-
-    }, 300)
-
-    // changing page so getting rid of stuff from the previous time from the page
-    try {
-        document.getElementById("heading").remove()
-        let secondSection = document.querySelector("#secondSection")
-        for (let index = secondSection.childElementCount-1; index >= 0; index--) { //getting rid of everything from second section
-            secondSection.children[index].remove()            
-        }
-        let thirdSection = document.querySelector("#thirdSection")
-        for (let index = thirdSection.childElementCount-1; index >= 0; index--) { //getting rid of everything from third section
-            thirdSection.children[index].remove()            
-        }
-        thirdSection.style.display = "flex"
-    } catch (e) {
-        if (e instanceof TypeError) {
-            // continuing since it must be first time opening page and can't find the elements it is trying to delete
-        }
-    }
-
-    document.getElementById("checkButton").text = "Check" // need this to run when in development i type in a new test no immediately after clicking on showAnswer
-    document.getElementById('showAnswerButton').classList.remove("disabled") // need this to run when in development i type in a new test no immediately after clicking on showAnswer
-
-    oldRandomNos += 1
-    randomNo = oldRandomNos
-    console.log("Random/Test No: ", randomNo)
-    
-    document.getElementById("jumperInput").value = ""
-    document.getElementById("jumperInput").value = randomNo
-
-    let tempStr1 = ""
-    tests[randomNo]['avestaAns'][0].forEach(element => {
-        let theKey = Object.keys(avestaDict).find(key => avestaDict[key] === element);
-        tempStr1 += `${theKey},`
-    });
-    console.log("Correct Ans: ", tempStr1)
-    console.log("Correct Ans: ", tests[randomNo]['avestaAns'][0])
-    tempList = [];
-    repeatingLetters = [];
-    tests[randomNo]["avestaAns"].forEach(element => { //extracting correct answers from tests dict & putting them in tempList for further processing. 
-        element.forEach(elem => {
-            if (tempList.indexOf(elem) == -1){ //check if letter is already in list
-                tempList.push(elem)
-            } else { // if letter is already in list i also need to check if orig answer contains multiple same letters.If it does, then push appropriate number of duplicate letters to the list.
-                console.log("enterd duplicate checker")
-                let countOfElemInOrigArray = element.filter(x => x === elem).length;
-                let countOfElemInTempArray = tempList.filter(x => x === elem).length;
-                console.log(elem, countOfElemInOrigArray)
-                console.log(elem, countOfElemInTempArray)
-                if (countOfElemInOrigArray - countOfElemInTempArray > 0) {
-                    tempList.push(elem)
-                }
-            }
-        });
-    });
-
-    let totalUniqueAvestaLettersInTest = tempList.length //capturing the correct Avesta unique letters length as later on will generate elements on its basis. Minimum i will show 10 & max the number of this variable.
-    console.log("Tot Unique Avesta Letters in Test answer: ", totalUniqueAvestaLettersInTest)
-    thirdSection = document.getElementById("thirdSection")
-    for (let index = 0; index < 10 || index < totalUniqueAvestaLettersInTest; index++) { // generating number of containers basis totalUniqueAve... var.
-        let divTemp = document.createElement('div');
-        divTemp.className = "thirdSectionElements fade-in";
-        thirdSection.appendChild(divTemp);
-    }
-
-    thirdSectionElements = document.querySelectorAll(".thirdSectionElements")
-
-    while (tempList.length < thirdSectionElements.length) { //using the Random No generated above, that specific test no being filled up with random nos from 1 to 50.
-        tempList.push(avestaDict[Math.floor(Math.random()*51)+1])
-    }
-
-    shuffle(tempList)
-    // console.log(tempList)
-
-    let heading = document.createElement("h4")
-    heading.textContent = tests[randomNo]["englishQ"]
-    heading.id = "heading"
-    heading.className = "fade-in"
-    firstSection.appendChild(heading)
-
-    tempList.forEach((elem,index) => {
-        let p = document.createElement('p');
-        p.className = "AvestaLetters noselect";
-        p.textContent = elem;
-        thirdSectionElements[index].appendChild(p);
-    });
+    "66":{"englishQ":"angry","avestaAns":[["g","r","a","N","t","a"]]},
+    "67":{"englishQ":"venerated / attuned","avestaAns":[["Y","a","S","t","a"]]},
+    "68":{"englishQ":"asked / question","avestaAns":[["p","a","r","S","t","a"]]},
+    "69":{"englishQ":"he is / she is / it is","avestaAns":[["a","s","t","i"]]},
+    "70":{"englishQ":"he wears / she wears","avestaAns":[["W","a","s","t","e"]]},
+    "71":{"englishQ":"veneration","avestaAns":[["Y","a","s","n","a"]]},
+    "72":{"englishQ":"arrangement","avestaAns":[["r","a","C","n","u"]]},
+    "73":{"englishQ":"carrying","avestaAns":[["W","a","s","m","a"]]},
+    "74":{"englishQ":"man","avestaAns":[["m","a","‚","y","a"]]},
+    "75":{"englishQ":"Guardian Spirit / Fravashi","avestaAns":[["f","r","a","w","a","C","i"]]},
+    "76":{"englishQ":"seed","avestaAns":[["t","a","x","m","a","n"]]},
+    "77":{"englishQ":"fever / heat","avestaAns":[["t","a","f","n","u"]]},
+    "78":{"englishQ":"exhilaration","avestaAns":[["m","a","s","t","i"]]},
+    "79":{"englishQ":"knowledge","avestaAns":[["c","i","s","t","i"]]},
+    "80":{"englishQ":"vomited","avestaAns":[["W","a","N","t","a"]]},
+    "81":{"englishQ":"rubbed","avestaAns":[["m","a","r","S","t","a"]]},
+    "82":{"englishQ":"country","avestaAns":[["d","a","F","y","u"],["d","a","i","?","h","u"]]},
+    "83":{"englishQ":"mountain","avestaAns":[["g","a","i","r","i","S"],["b","a","r","v","z","a","M","h"]]},
+    "84":{"englishQ":"pain","avestaAns":[["d","vrv"],["d","r","i","t","a"]]},
+    "85":{"englishQ":"teaching","avestaAns":[["T","k","a","E","C","a"],["s","a","s","t","i"]]},
+    "86":{"englishQ":"to give / to know / to create","avestaAns":[["d","a","√-"]]},
+    "87":{"englishQ":"to create","avestaAns":[["d","A","q","√-"]]},
+    "88":{"englishQ":"to venerate / to worship","avestaAns":[["Y","a","z","√-"]]},
+    "89":{"englishQ":"to ask","avestaAns":[["p","a","r","s","√-"]]},
+    "90":{"englishQ":"to be / is / to exist","avestaAns":[["a","h","√-"]]},
+    "91":{"englishQ":"to wear","avestaAns":[["W","a","h","√-"]]},
+    "92":{"englishQ":"to die","avestaAns":[["m","a","r","√-"],["i","r","i","q","√-"]]},
+    "93":{"englishQ":"to heat","avestaAns":[["t","a","p","√-"]]},
+    "94":{"englishQ":"to think","avestaAns":[["c","i","T","√-"],["m","a","n","√-"]]},
+    "95":{"englishQ":"to wish / to desire / to throw","avestaAns":[["i","C","√-"]]},
+    "96":{"englishQ":"to burn / to shine","avestaAns":[["u","C","√-"]]},
+    "97":{"englishQ":"to do","avestaAns":[["k","vrv","√-"]]},
+    "98":{"englishQ":"to rule / to shine","avestaAns":[["x","C","i","√-"]]},
+    "99":{"englishQ":"to love","avestaAns":[["f","r","I","√-"]]},
+    "100":{"englishQ":"to hear","avestaAns":[["g","u","C","√-"],["s","r","u","√-"]]},
+    "101":{"englishQ":"to tear","avestaAns":[["d","vrv","√-"]]},
+    "102":{"englishQ":"to lie / to hurt / to decieve","avestaAns":[["d","r","u","j","√-"]]},
+    "103":{"englishQ":"to protect","avestaAns":[["p","A","√-"]]},
+    "104":{"englishQ":"to go","avestaAns":[["g","a","m","√-"],["i","√-"],["a","r","√-"]]},
+    "105":{"englishQ":"to pour","avestaAns":[["i","r","i","c","√-"],["z","u","√-"]]},
+    "106":{"englishQ":"to divide","avestaAns":[["b","a","j","√-"]]},
+    "107":{"englishQ":"to arrange","avestaAns":[["r","a","z","√-"]]},
+    "108":{"englishQ":"to rub","avestaAns":[["m","a","r","z","√-"],["m","vrv","z","√-"]]},
+    "109":{"englishQ":"to vomit","avestaAns":[["W","a","m","√-"]]},
+    "110":{"englishQ":"to teach","avestaAns":[["s","a","h","√-"]]},
+    "111":{"englishQ":"to enquire / to ask","avestaAns":[["p","vrv","s","√-"]]},
+    "112":{"englishQ":"to join","avestaAns":[["‚","u","√-"]]},
+    "113":{"englishQ":"to exalt","avestaAns":[["b","vrv","z","√-"]]},
+    "114":{"englishQ":"to lie down","avestaAns":[["s","i","√-"]]},
+    "115":{"englishQ":"to pound","avestaAns":[["h","u","√-"]]},
+    "116":{"englishQ":"to praise","avestaAns":[["s","t","u","√-"]]},
+    "117":{"englishQ":"to stretch","avestaAns":[["t","a","n","√-"]]},
+    "118":{"englishQ":"to spread","avestaAns":[["s","t","vrv","√-"]]},
+    "119":{"englishQ":"to lead","avestaAns":[["n","i","√-"]]},
+    "120":{"englishQ":"to speak","avestaAns":[["W","a","c","√-"],["m","r","u","√-"]]},
+    "121":{"englishQ":"to nourish","avestaAns":[["p","i","√-"]]},
+    "122":{"englishQ":"to cross","avestaAns":[["p","vrv","√-"]]},
+    "123":{"englishQ":"to be courageous","avestaAns":[["a","m","√-"]]},
+    "124":{"englishQ":"to flow","avestaAns":[["t","a","c","√-"]]},
+    "125":{"englishQ":"to age","avestaAns":[["z","r","u","√-"]]},
+    "126":{"englishQ":"to cut","avestaAns":[["s","n","a","q","√-"]]},
+    "127":{"englishQ":"to sit","avestaAns":[["a","s","√-"]]},
+    "128":{"englishQ":"to be immortal","avestaAns":[["a","m","vrv","√-"]]},
+    "129":{"englishQ":"to be beautiful","avestaAns":[["s","r","i","√-"]]},
+    "130":{"englishQ":"to be good","avestaAns":[["W","a","h","√-"]]},
+    "131":{"englishQ":"to hasten","avestaAns":[["a","s","√-"]]}
 }
 
 function restartTest() {
@@ -421,29 +235,35 @@ function restartTest() {
         }
     }
 
-    while(true){ //generating the random number which will be the Test Number
-        randomNo = Math.floor(Math.random() * lengthOfTests)+1;
-        console.log("Random/Test No: ", randomNo)
-        tempString = ""
-        tests[randomNo]['avestaAns'][0].forEach(element => {
-            theKey = Object.keys(avestaDict).find(key => avestaDict[key] === element);
-            tempString += `${theKey},`
-        });
-        // console.log("Correct Ans: ", tempString)
-        if(oldRandomNos.length === lengthOfTests){oldRandomNos = []}; // change the no here to no of tests you've fed in the code.
-        if(oldRandomNos.indexOf(randomNo) === -1){ // This check in place to ensure same random number is not reoldRandom in 1 run.
-            oldRandomNos.push(randomNo);
-            break;
+    if (squareRootWordMode) {
+        let testNumberWhereSqRootWordsAreStarting = 86; // sq root words are in the end of the tests array, so test length is the ending point for the same
+        while(true){ // generating random no but ensuring i pick only Sq Root Word
+            randomNo = Math.floor(Math.random() * (lengthOfTests-testNumberWhereSqRootWordsAreStarting+1))+testNumberWhereSqRootWordsAreStarting; // basically this gets the random number exactly in the range where the sq root words are present in the tests array. Even i don't understand the math here, stole the logic off SO.
+            if(oldRandomNosOfSqRootWords.length === amountOfSqRootWordsInTestArray){oldRandomNosOfSqRootWords = []};
+            if(oldRandomNosOfSqRootWords.indexOf(randomNo) === -1){ // This check in place to ensure same random number is not repeated in 1 run.
+                oldRandomNosOfSqRootWords.push(randomNo);
+                break;
+            }
+        }
+    } else {
+        while(true){ //generating the random number which will be the Test Number
+            randomNo = Math.floor(Math.random() * lengthOfTests)+1;
+            if(oldRandomNos.length === lengthOfTests){oldRandomNos = []};
+            if(oldRandomNos.indexOf(randomNo) === -1){ // This check in place to ensure same random number is not repeated in 1 run.
+                oldRandomNos.push(randomNo);
+                break;
+            }
         }
     }
 
-    // document.getElementById("jumperInput").value = randomNo
     
+    console.log("Random/Test No: ", randomNo)    
     let tempStr1 = ""
     tests[randomNo]['avestaAns'][0].forEach(element => {
         let theKey = Object.keys(avestaDict).find(key => avestaDict[key] === element);
         tempStr1 += `${theKey},`
     });
+
     console.log("Correct Ans: ", tempStr1)
     console.log("Correct Ans: ", tests[randomNo]['avestaAns'][0])
     tempList = [];
@@ -503,8 +323,8 @@ function buttonPressed() { //this gets fired everytime the #checkButton is press
     if (button.text == "Next") {
         button.text = "Check" // need to do this immediately to prevent multiple page loads if user taps Next like crazy. EDIT - no succ, still user can bypass.
         console.log("next page")
-        restartTest();
-        // restartStraightTest();
+        // restartTest();
+        restartStraightTest();
         return;
     }
     // Below section checks the answer given by user.
@@ -559,6 +379,108 @@ function buttonPressed() { //this gets fired everytime the #checkButton is press
     }
 }
 
+function restartStraightTest() {
+    setTimeout(function() {
+        avestaLetters = document.querySelectorAll(".AvestaLetters"); // nodeList of all the avestaLetters in the origin. since it is not declared, it becomes a global variable. Capturing this after sometime as the app.js insertavestaLetters() function is generating these html img elements firstly.
+	    avestaLetters.forEach((avestaLetter) => {
+            const event = () => {
+                let buttonStatus = document.getElementById("checkButton").text
+                if (isAnimating || buttonStatus == "Next" || buttonStatus == "Correct!")  return; // if we already have an animation playing, don't let the user start a new one. Also if already correct answer has been given, don't animate naymore.
+                avestaLetter.closest(".thirdSectionElements") ? move(avestaLetter) : putback(avestaLetter); // decide if we should use the move() or putback() functions based on the avestaLetter's current location
+            };
+	
+            avestaLetter.addEventListener("mouseup", event);
+            avestaLetter.addEventListener("touchend", event);
+        })
+
+    }, 300)
+
+    // changing page so getting rid of stuff from the previous time from the page
+    try {
+        document.getElementById("heading").remove()
+        let secondSection = document.querySelector("#secondSection")
+        for (let index = secondSection.childElementCount-1; index >= 0; index--) { //getting rid of everything from second section
+            secondSection.children[index].remove()            
+        }
+        let thirdSection = document.querySelector("#thirdSection")
+        for (let index = thirdSection.childElementCount-1; index >= 0; index--) { //getting rid of everything from third section
+            thirdSection.children[index].remove()            
+        }
+        thirdSection.style.display = "flex"
+    } catch (e) {
+        if (e instanceof TypeError) {
+            // continuing since it must be first time opening page and can't find the elements it is trying to delete
+        }
+    }
+
+    document.getElementById("checkButton").text = "Check" // need this to run when in development i type in a new test no immediately after clicking on showAnswer
+    document.getElementById('showAnswerButton').classList.remove("disabled") // need this to run when in development i type in a new test no immediately after clicking on showAnswer
+
+    oldRandomNos += 1
+    randomNo = oldRandomNos
+    console.log("Random/Test No: ", randomNo)
+    
+    // document.getElementById("jumperInput").value = ""
+    // document.getElementById("jumperInput").value = randomNo
+
+    let tempStr1 = ""
+    tests[randomNo]['avestaAns'][0].forEach(element => {
+        let theKey = Object.keys(avestaDict).find(key => avestaDict[key] === element);
+        tempStr1 += `${theKey},`
+    });
+    console.log("Correct Ans: ", tempStr1)
+    console.log("Correct Ans: ", tests[randomNo]['avestaAns'][0])
+    tempList = [];
+    repeatingLetters = [];
+    tests[randomNo]["avestaAns"].forEach(element => { //extracting correct answers from tests dict & putting them in tempList for further processing. 
+        element.forEach(elem => {
+            if (tempList.indexOf(elem) == -1){ //check if letter is already in list
+                tempList.push(elem)
+            } else { // if letter is already in list i also need to check if orig answer contains multiple same letters.If it does, then push appropriate number of duplicate letters to the list.
+                console.log("enterd duplicate checker")
+                let countOfElemInOrigArray = element.filter(x => x === elem).length;
+                let countOfElemInTempArray = tempList.filter(x => x === elem).length;
+                console.log(elem, countOfElemInOrigArray)
+                console.log(elem, countOfElemInTempArray)
+                if (countOfElemInOrigArray - countOfElemInTempArray > 0) {
+                    tempList.push(elem)
+                }
+            }
+        });
+    });
+
+    let totalUniqueAvestaLettersInTest = tempList.length //capturing the correct Avesta unique letters length as later on will generate elements on its basis. Minimum i will show 10 & max the number of this variable.
+    console.log("Tot Unique Avesta Letters in Test answer: ", totalUniqueAvestaLettersInTest)
+    thirdSection = document.getElementById("thirdSection")
+    for (let index = 0; index < 10 || index < totalUniqueAvestaLettersInTest; index++) { // generating number of containers basis totalUniqueAve... var.
+        let divTemp = document.createElement('div');
+        divTemp.className = "thirdSectionElements fade-in";
+        thirdSection.appendChild(divTemp);
+    }
+
+    thirdSectionElements = document.querySelectorAll(".thirdSectionElements")
+
+    while (tempList.length < thirdSectionElements.length) { //using the Random No generated above, that specific test no being filled up with random nos from 1 to 50.
+        tempList.push(avestaDict[Math.floor(Math.random()*51)+1])
+    }
+
+    shuffle(tempList)
+    // console.log(tempList)
+
+    let heading = document.createElement("h4")
+    heading.textContent = tests[randomNo]["englishQ"]
+    heading.id = "heading"
+    heading.className = "fade-in"
+    firstSection.appendChild(heading)
+
+    tempList.forEach((elem,index) => {
+        let p = document.createElement('p');
+        p.className = "AvestaLetters noselect";
+        p.textContent = elem;
+        thirdSectionElements[index].appendChild(p);
+    });
+}
+
 function showCorrectAnswer() {
     animationInitiatedByShowCorrectAnswer = true; // if this is true, then i'm disabling sibling animation in game2.js as it glitches if all move together
     document.getElementById("checkButton").text = "Next"
@@ -590,15 +512,6 @@ const jumpToTest = () => {
 
     restartStraightTest();
 }
-
-let firstSection = document.getElementById('firstSection');
-
-let lengthOfTests = 104
-let oldRandomNos = []
-// let oldRandomNos = 100 // restartStraightTest() needed for that
-
-restartTest(); // if you switch between this & straight test, need to change quite a few things between each. Mainly noOfOldTests becomes a 0 in other & also change which function gets called in buttonPressed function.
-// restartStraightTest();
 
 const installHelpModal = () => {
         // Get the modal
@@ -696,3 +609,83 @@ async function showSynonymsIfPresent() {  // deleting everything from third sect
         }
     }
 }
+
+const input = document.getElementsByTagName('input')[0];
+
+// Or:
+// const input = document.querySelector('input');
+
+input.addEventListener('change', () => {
+  if (input.checked) {
+    console.log('Square Root words mode enabled.');
+    squareRootWordMode = true;
+    oldRandomNosOfSqRootWords = []
+    if (amountOfSqRootWordsInTestArray === 0) {// the next bit of for loop inception generates this variable. Also, wisely it runs only the first time the toggle button is pressed thanks to if condition.
+        for (let theTestNo = 1; theTestNo < (lengthOfTests+1); theTestNo++) { // iterating over the testNo
+            for (let outerLoop = 0; outerLoop < tests[theTestNo]['avestaAns'].length; outerLoop++) { // iterating over multiple answers of a word (in case of multi answer words)
+                for (let innerLoop = 0; innerLoop < tests[theTestNo]['avestaAns'][outerLoop].length; innerLoop++) { // iterating over each alphabet in the answer
+                    if(tests[theTestNo]['avestaAns'][outerLoop][innerLoop] === "√-"){
+                        amountOfSqRootWordsInTestArray++
+                        outerLoop = tests[theTestNo]['avestaAns'].length
+                        break;
+                    }
+                }
+            }
+        }
+    }
+    // restartTest();
+    oldRandomNos = 85 // set this to the test number where sq root words are starting, minus 1.
+    restartStraightTest();
+} else {
+    console.log('All words mode enabled.');
+    squareRootWordMode = false;
+    oldRandomNos = []
+    // restartTest();
+    oldRandomNos = 0
+    restartStraightTest();
+  }  
+});
+
+let squareRootWordMode = false;
+
+let firstSection = document.getElementById('firstSection');
+
+const lengthOfTests = 104
+// let oldRandomNos = []
+let oldRandomNosOfSqRootWords = []
+let amountOfSqRootWordsInTestArray = 0 
+let oldRandomNos = 0 // restartStraightTest() needed for that
+
+// restartTest(); // if you switch between this & straight test, need to change quite a few things between each. Mainly noOfOldTests becomes a 0 in other & also change which function gets called in buttonPressed function.
+restartStraightTest();
+
+// The below code use when Mummy asks to feed in new words. Simply enter data in feedingInPointWithMummy array, update starting & ending numbers variables threasfter. Starting number should be 1 more than the final number in tests array existing. Then just run the code then type in console the last commented line & then the new array will be pasted in clipboard. Then paste it in VS Code, multiselect cursor on the ending commas between each item & press enter to format correctly.
+
+// feedingInPointWithMummy = {
+//     132: ['', []], 
+// }
+  
+// let startingNumberOfFeedingInPointWithMummyArray = 132;
+// let endingNumberOfFeedingInPointWithMummyArray = 132;
+
+  
+// for (let index = startingNumberOfFeedingInPointWithMummyArray; index < (endingNumberOfFeedingInPointWithMummyArray+1); index++) {
+//     let tempOuterList = []
+//     feedingInPointWithMummy[index].forEach((element,i) => {
+//         let tempInnerList = []
+//         if(i===0){
+//             theQuesInEngl = feedingInPointWithMummy[index][i]
+//             tests[index] = {englishQ: theQuesInEngl, avestaAns: []}
+//         }
+//         else if(i>0){
+//             feedingInPointWithMummy[index][i].forEach(e => {
+//                 tempInnerList.push(avestaDict[e])
+//             });
+//             tempOuterList.push(tempInnerList)
+//         }
+//     });
+//     tests[index]['avestaAns'] = tempOuterList
+// }
+
+// let newListButInStringFormat = JSON.stringify(tests);
+// // copy(newListButInStringFormat)

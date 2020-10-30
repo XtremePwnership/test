@@ -33,25 +33,3 @@ function shuffle(array) { // i stole this function from SO, my brain is too weak
   
     return array;
   }
-  
-// let rawinput = { // this is to make raw text to images
-//     1: ["country", [[18,1,9,40,5], [18,1,3,34,36,5]]],
-//     2: ["mountain", [[11,1,3,20,3,43], [22,1,20,25,46,1,33,36]]],
-//     3: ["pain", [[18,27], [18,20,3,23,1]]],
-//     4: ["teaching", [[24,7,1,16,44,1],  [42,1,42,23,3]]],
-//     5: ["to go", [[11,1,32,51], [3,51], [11,1,32,51]]]
-// }
-
-// newKill = {}
-
-// for (let i = 1; i <= 5; i++) {
-//     temp3 = [];
-//     rawinput[i][1].forEach(element => {
-//         temp4 = []
-//         element.forEach(elem => {
-//         temp4.push(avestaDict[elem])
-// });
-//         temp3.push(temp4)
-// });
-//     newKill[i] = {"englishQ": rawinput[i][0], "avestaAns": [[temp3]]}
-// }
