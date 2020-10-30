@@ -620,6 +620,13 @@ const input = document.getElementsByTagName('input')[0];
 
 input.addEventListener('change', () => {
   if (input.checked) {
+    console.log('All words mode enabled.');
+    squareRootWordMode = false;
+    oldRandomNos = []
+    // restartTest();
+    oldRandomNos = 0
+    restartStraightTest();    
+} else {
     console.log('Square Root words mode enabled.');
     squareRootWordMode = true;
     oldRandomNosOfSqRootWords = []
@@ -639,17 +646,10 @@ input.addEventListener('change', () => {
     // restartTest();
     oldRandomNos = 85 // set this to the test number where sq root words are starting, minus 1.
     restartStraightTest();
-} else {
-    console.log('All words mode enabled.');
-    squareRootWordMode = false;
-    oldRandomNos = []
-    // restartTest();
-    oldRandomNos = 0
-    restartStraightTest();
   }  
 });
 
-let squareRootWordMode = false;
+let squareRootWordMode = true;
 
 let firstSection = document.getElementById('firstSection');
 
@@ -657,7 +657,7 @@ const lengthOfTests = 131;
 // let oldRandomNos = []
 let oldRandomNosOfSqRootWords = []
 let amountOfSqRootWordsInTestArray = 0 
-let oldRandomNos = 0 // restartStraightTest() needed for that
+let oldRandomNos = 85 // restartStraightTest() needed for that. Put the number here of where Sq Root Words are starting minus 1 so that by defualt square root words are shown to user in begng
 
 // restartTest(); // if you switch between this & straight test, need to change quite a few things between each. Mainly noOfOldTests becomes a 0 in other & also change which function gets called in buttonPressed function.
 restartStraightTest();
