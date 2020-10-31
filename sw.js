@@ -1,4 +1,4 @@
-// just a placeholder comment to ensure cache gets refresh. vvv8d
+// just a placeholder comment to ensure cache gets refresh. vvv
 
 self.addEventListener("install", e => {
 e.waitUntil(

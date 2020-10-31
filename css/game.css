@@ -400,16 +400,16 @@ src: url("../res/Jamshed.ttf");
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
 }
 .can-toggle.demo-rebrand-1 input[type="checkbox"][disabled] ~ label {
-	color: rgba(181, 62, 116, 0.5);
+	color: #368a65;
 }
 .can-toggle.demo-rebrand-1 input[type="checkbox"]:focus ~ label .can-toggle__switch, .can-toggle.demo-rebrand-1 input[type="checkbox"]:hover ~ label .can-toggle__switch {
-	background-color: #b53e74;
+	background-color: #368a65;
 }
 .can-toggle.demo-rebrand-1 input[type="checkbox"]:focus ~ label .can-toggle__switch:after, .can-toggle.demo-rebrand-1 input[type="checkbox"]:hover ~ label .can-toggle__switch:after {
-	color: #8f315c;
+	color: #368a65;
 }
 .can-toggle.demo-rebrand-1 input[type="checkbox"]:hover ~ label {
-	color: #a23768;
+	color: #368a65;
 }
 .can-toggle.demo-rebrand-1 input[type="checkbox"]:checked ~ label:hover {
 	color: #39916a;
@@ -431,7 +431,7 @@ src: url("../res/Jamshed.ttf");
 }
 .can-toggle.demo-rebrand-1 label .can-toggle__switch {
 	transition: background-color 0.3s ease-in-out;
-	background: #c14b81;
+	background: #368a65;
 }
 .can-toggle.demo-rebrand-1 label .can-toggle__switch:before {
 	color: rgba(255, 255, 255, 0.6);
@@ -439,7 +439,7 @@ src: url("../res/Jamshed.ttf");
 .can-toggle.demo-rebrand-1 label .can-toggle__switch:after {
 	-webkit-transition: -webkit-transform 0.3s ease-in-out;
 	transition: transform 0.3s ease-in-out;
-	color: #b53e74;
+	color: #368a65;
 }
 
 /* here the code for the fancy "Roots/Words" button ends. */
