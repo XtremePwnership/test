@@ -269,6 +269,7 @@ src: url("../res/Jamshed.ttf");
 
 .can-toggle {
 	position: relative;
+	display: inline-block;
 }
 .can-toggle *, .can-toggle *:before, .can-toggle *:after {
 	box-sizing: border-box;
