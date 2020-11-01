@@ -297,7 +297,7 @@ src: url("../res/Jamshed.ttf");
 	position: relative;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: center; /* finally after a lot of T&E adding this centered the button in the flex*/
 }
 .can-toggle label .can-toggle__label-text {
 	flex: 1;
