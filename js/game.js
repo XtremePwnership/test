@@ -724,7 +724,7 @@ let squareRootWordMode = true;
 
 let firstSection = document.getElementById('firstSection');
 
-const lengthOfTests = 131;
+const lengthOfTests = 204;
 // let oldRandomNos = []
 let oldRandomNosOfSqRootWords = []
 let amountOfSqRootWordsInTestArray = 0 
